@@ -3,14 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'gradlew -version'
-                sh 'gradlew build'
+                echo 'hello pipeline'
             }
         }
-        stage('stage 2'){
-            steps {
-                echo 'Hello pipeline'
-            }
-        }
+
     }
 }
